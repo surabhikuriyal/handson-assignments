@@ -16,7 +16,7 @@ class EmployeeMain{
         addr[0]=new Address("Uttarakhand","Dehradun","560021");
         addr[2]=new Address("Rajasthan","Jaipur","248001");
         for(Address e:addr){
-            if(e.state!=null){
+            if(e!=null){
                 System.out.println("STATE : "+e.state+" CITY : "+e.city+" PINCODE : "+e.pin);
             }
         }
