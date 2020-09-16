@@ -20,7 +20,12 @@ class SavingsAccount{
         ifsc="HSBC001";
     }
     void withdraw(double amount){
-        balance=balance-amount;
+        if(balance==0)
+            System.out.println("Amount cannot be withdrawn, Your Balance is Rs "+balance);
+        else if(amount>balance)
+            System.out.println("Amount cannot be withdrawn, Your Balance is less than the Amount you entered");
+        else
+             balance=balance-amount;
         System.out.println("After withdrawing Rs "+amount+", the total amount is : Rs "+balance);
     }
     void deposit(double amount){
