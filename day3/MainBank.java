@@ -22,10 +22,11 @@ public class MainBank {
     // pass the accountNO and get the Account from Accounts[] 
     public static Account getAccount(long accountNo) {
         Account[] accounts = AccountsDB.getAccounts();
-	for(Account t : accounts)
-		if(t.getAccountNumber() == accountNo)
-			return t;
-	return null;
+	    for(Account acc : accounts){
+		if(acc.getAccountNumber() == accountNo)
+			return acc;
+        }
+	    return null;
         /*Account account = null;
         // get the account from accounts using the accountNo
 

@@ -25,6 +25,8 @@ public class Account {
     }
     public void withdraw(double amount) {
         System.out.println("withdraws amount from account");
+        this.balance-=amount;
+	    System.out.println("AMOUNT AFTER WITHDRAWAL : Rs "+this.balance);
     }
 
     /* deposit must return the balance
